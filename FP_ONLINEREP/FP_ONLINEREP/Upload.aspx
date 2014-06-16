@@ -11,6 +11,40 @@
     <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
     <meta name="author" content="Codrops" />
     <link rel="shortcut icon" href="../favicon.ico"/> 
+    <style type="text/css">
+    #dropZone {
+        background: gray;
+        border: black dashed 3px;
+        width: 200px;
+        padding: 50px;
+        text-align: center;
+        color: white;
+    }
+</style>
+<script type="text/javascript">
+    $(function () {
+        $('#dropZone').filedrop({
+            url: '@Url.Action("UploadFiles")',
+            paramname: 'files',
+            maxFiles: 5,
+            dragOver: function () {
+                $('#dropZone').css('background', 'blue');
+            },
+            dragLeave: function () {
+                $('#dropZone').css('background', 'gray');
+            },
+            drop: function () {
+                $('#dropZone').css('background', 'gray');
+            },
+            afterAll: function () {
+                $('#dropZone').html('The file(s) have been uploaded successfully!');
+            },
+            uploadFinished: function (i, file, response, time) {
+                $('#uploadResult').append('<li>' + file.name + '</li>');
+            }
+        });
+    });
+</script>
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
@@ -43,6 +77,11 @@
                     
                     <asp:Button ID="btnUpload" Text="Upload File" runat="server"  OnClick="btnUpload_Click" />
                 </div>
+                <div id="dropZone">Drop your files here</div>
+                <br/>
+                Uploaded Files:
+                <ul id="uploadResult">
+                </ul>
             </div>
         </section>
     </div>
