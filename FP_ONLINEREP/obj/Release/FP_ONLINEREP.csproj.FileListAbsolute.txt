@@ -1,0 +1,7 @@
+C:\Users\admin\Documents\Visual Studio 2012\Projects\BDL\FP_ONLINEREP\FP_ONLINEREP\bin\FP_ONLINEREP.dll
+C:\Users\admin\Documents\Visual Studio 2012\Projects\BDL\FP_ONLINEREP\FP_ONLINEREP\bin\FP_ONLINEREP.pdb
+C:\Users\admin\Documents\Visual Studio 2012\Projects\BDL\FP_ONLINEREP\FP_ONLINEREP\bin\EntityFramework.dll
+C:\Users\admin\Documents\Visual Studio 2012\Projects\BDL\FP_ONLINEREP\FP_ONLINEREP\bin\EntityFramework.xml
+C:\Users\admin\Documents\Visual Studio 2012\Projects\BDL\FP_ONLINEREP\FP_ONLINEREP\obj\Release\FP_ONLINEREP.dll
+C:\Users\admin\Documents\Visual Studio 2012\Projects\BDL\FP_ONLINEREP\FP_ONLINEREP\obj\Release\FP_ONLINEREP.pdb
+C:\Users\admin\Documents\Visual Studio 2012\Projects\BDL\FP_ONLINEREP\FP_ONLINEREP\obj\Release\FP_ONLINEREP.csprojResolveAssemblyReference.cache

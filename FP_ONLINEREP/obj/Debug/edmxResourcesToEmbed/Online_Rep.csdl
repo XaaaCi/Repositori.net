@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Online_RepositoryModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Online_RepositoryEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Files" EntityType="Online_RepositoryModel.File" />
+    <EntitySet Name="Users" EntityType="Online_RepositoryModel.User" />
+    <AssociationSet Name="FK_File_User" Association="Online_RepositoryModel.FK_File_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="File" EntitySet="Files" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="File">
+    <Key>
+      <PropertyRef Name="FileId" />
+    </Key>
+    <Property Name="FileId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserId" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="Online_RepositoryModel.FK_File_User" FromRole="File" ToRole="User" />
+    <Property Type="String" Name="ContentType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="Size" />
+    <Property Type="Binary" Name="Data" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Nullable="false" Type="Int32" />
+    <Property Name="Name" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Authority" Type="Int32" />
+    <NavigationProperty Name="Files" Relationship="Online_RepositoryModel.FK_File_User" FromRole="User" ToRole="File" />
+  </EntityType>
+  <Association Name="FK_File_User">
+    <End Role="User" Type="Online_RepositoryModel.User" Multiplicity="0..1" />
+    <End Role="File" Type="Online_RepositoryModel.File" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="File">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

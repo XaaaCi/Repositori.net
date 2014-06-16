@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/Online_Repository.mdf">
+      <publishTime>05/22/2014 14:36:09</publishTime>
+    </File>
+    <File Include="App_Data/Online_Repository_log.ldf">
+      <publishTime>05/22/2014 14:36:09</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>05/15/2014 11:02:25</publishTime>
+    </File>
+    <File Include="bin/FP_ONLINEREP.dll">
+      <publishTime>06/01/2014 11:06:17</publishTime>
+    </File>
+    <File Include="css/animate-custom.css">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/demo.css">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/fonts/BebasNeue-webfont.eot">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/fonts/BebasNeue-webfont.svg">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/fonts/BebasNeue-webfont.ttf">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/fonts/BebasNeue-webfont.woff">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/fonts/Dharma Type Font License.txt">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/fonts/fontomas-webfont.eot">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/fonts/fontomas-webfont.svg">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/fonts/fontomas-webfont.ttf">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/fonts/fontomas-webfont.woff">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/fonts/franchise-bold-webfont.eot">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/fonts/franchise-bold-webfont.svg">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/fonts/franchise-bold-webfont.ttf">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/fonts/franchise-bold-webfont.woff">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/Site.css">
+      <publishTime>05/28/2014 17:08:34</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/style2.css">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="css/style3.css">
+      <publishTime>05/14/2014 22:32:40</publishTime>
+    </File>
+    <File Include="DeleteFile.aspx">
+      <publishTime>05/30/2014 17:35:39</publishTime>
+    </File>
+    <File Include="Disclaimer.aspx">
+      <publishTime>05/15/2014 12:19:10</publishTime>
+    </File>
+    <File Include="FileList.aspx">
+      <publishTime>05/30/2014 17:21:01</publishTime>
+    </File>
+    <File Include="GetFile.aspx">
+      <publishTime>05/28/2014 14:01:42</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>06/01/2014 10:55:39</publishTime>
+    </File>
+    <File Include="images/bg.jpg">
+      <publishTime>05/14/2014 22:32:45</publishTime>
+    </File>
+    <File Include="images/ImageAttribution.txt">
+      <publishTime>05/14/2014 22:32:45</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>05/30/2014 18:36:22</publishTime>
+    </File>
+    <File Include="LoginAndRegister.aspx">
+      <publishTime>05/26/2014 19:01:14</publishTime>
+    </File>
+    <File Include="Model1.Context.tt">
+      <publishTime>05/22/2014 14:34:24</publishTime>
+    </File>
+    <File Include="Model1.edmx.diagram">
+      <publishTime>05/22/2014 14:35:24</publishTime>
+    </File>
+    <File Include="Model1.tt">
+      <publishTime>05/22/2014 14:34:24</publishTime>
+    </File>
+    <File Include="Online_Rep.Context.tt">
+      <publishTime>05/22/2014 15:21:47</publishTime>
+    </File>
+    <File Include="Online_Rep.edmx.diagram">
+      <publishTime>05/28/2014 16:42:16</publishTime>
+    </File>
+    <File Include="Online_Rep.tt">
+      <publishTime>05/22/2014 15:21:47</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/15/2014 11:02:34</publishTime>
+    </File>
+    <File Include="Profile.aspx">
+      <publishTime>06/01/2014 11:02:13</publishTime>
+    </File>
+    <File Include="Register.aspx">
+      <publishTime>05/27/2014 17:07:39</publishTime>
+    </File>
+    <File Include="RegisterRedirect.aspx">
+      <publishTime>05/30/2014 17:32:29</publishTime>
+    </File>
+    <File Include="Upload.aspx">
+      <publishTime>05/28/2014 17:19:46</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/01/2014 11:06:17</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

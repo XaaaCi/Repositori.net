@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Online_RepositoryModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Online_RepositoryModel1StoreContainer">
+    <EntitySet Name="File" EntityType="Online_RepositoryModel1.Store.File" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FileType" EntityType="Online_RepositoryModel1.Store.FileType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="Online_RepositoryModel1.Store.User" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_File_FileType" Association="Online_RepositoryModel1.Store.FK_File_FileType">
+      <End Role="FileType" EntitySet="FileType" />
+      <End Role="File" EntitySet="File" />
+    </AssociationSet>
+    <AssociationSet Name="FK_File_User" Association="Online_RepositoryModel1.Store.FK_File_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="File" EntitySet="File" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="File">
+    <Key>
+      <PropertyRef Name="FileId" />
+    </Key>
+    <Property Name="FileId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Path" Type="nvarchar" MaxLength="50" />
+    <Property Name="TypeId" Type="int" />
+    <Property Name="UserId" Type="int" />
+  </EntityType>
+  <EntityType Name="FileType">
+    <Key>
+      <PropertyRef Name="TypeId" />
+    </Key>
+    <Property Name="TypeId" Type="int" Nullable="false" />
+    <Property Name="MIME" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Authority" Type="int" />
+  </EntityType>
+  <Association Name="FK_File_FileType">
+    <End Role="FileType" Type="Online_RepositoryModel1.Store.FileType" Multiplicity="0..1" />
+    <End Role="File" Type="Online_RepositoryModel1.Store.File" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FileType">
+        <PropertyRef Name="TypeId" />
+      </Principal>
+      <Dependent Role="File">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_File_User">
+    <End Role="User" Type="Online_RepositoryModel1.Store.User" Multiplicity="0..1" />
+    <End Role="File" Type="Online_RepositoryModel1.Store.File" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="File">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

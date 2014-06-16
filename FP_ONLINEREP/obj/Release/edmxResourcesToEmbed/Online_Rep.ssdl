@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Online_RepositoryModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Online_RepositoryModelStoreContainer">
+    <EntitySet Name="File" EntityType="Online_RepositoryModel.Store.File" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="Online_RepositoryModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_File_User" Association="Online_RepositoryModel.Store.FK_File_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="File" EntitySet="File" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="File">
+    <Key>
+      <PropertyRef Name="FileId" />
+    </Key>
+    <Property Name="FileId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContentType" Type="nvarchar" MaxLength="50" />
+    <Property Name="Size" Type="bigint" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="Data" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Authority" Type="int" />
+  </EntityType>
+  <Association Name="FK_File_User">
+    <End Role="User" Type="Online_RepositoryModel.Store.User" Multiplicity="0..1" />
+    <End Role="File" Type="Online_RepositoryModel.Store.File" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="File">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
