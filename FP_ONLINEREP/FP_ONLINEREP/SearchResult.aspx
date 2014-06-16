@@ -1,11 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FileList.aspx.cs" Inherits="FP_ONLINEREP.FileList" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SearchResult.aspx.cs" Inherits="FP_ONLINEREP.SearchResult" %>
+
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <meta charset="utf-8" />
-    <title>Home</title>
+    <title>Search Result</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
     <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
     <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
@@ -33,7 +34,7 @@
             <nav class="codrops-demos">
                 <a href="Upload.aspx">Upload</a>
                 <a href="Home.aspx">Home</a>
-                <a href="FileList.aspx" class="current-demo">File List</a>
+                <a href="FileList.aspx">File List</a>
             </nav>
         </header>
         <section>
@@ -42,9 +43,13 @@
                     <a class="hiddenanchor" id="toregister"></a>
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
+                             
                         <div id="login" class="animate form">
-                                <h1>File List</h1> 
-                                <asp:GridView ID="gvFiles" AutoGenerateColumns="true" runat="server" CssClass="GridViewStyle" Height="177px" Width="546px">
+                                <h1 id="header1" runat="server"></h1> 
+                                <asp:TextBox ID="SearchText" runat="server"></asp:TextBox>
+                                <asp:Button ID="SearchButton" runat="server" Text="search" OnClick="SearchButton_Click"/>
+                       
+                                <asp:GridView ID="gvFiles" AutoGenerateColumns="true" runat="server" CssClass="GridViewStyle">
                                     <FooterStyle CssClass="GridViewFooterStyle" />
                                     <RowStyle CssClass="GridViewRowStyle" />
                                     <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
@@ -57,14 +62,6 @@
                                             <asp:HyperLink ID="HyperLink1" runat="server"
                                                 NavigateUrl='<%# Eval("FileId", "GetFile.aspx?ID={0}") %>'
                                                 Text="Download">
-                                            </asp:HyperLink>
-                                        </ItemTemplate>
-                                    </asp:TemplateField>
-                                    <asp:TemplateField>
-                                        <ItemTemplate>
-                                            <asp:HyperLink ID="HyperLink3" runat="server"
-                                                NavigateUrl='<%# Eval("FileId", "DeleteFile.aspx?ID={0}") %>'
-                                                Text="Delete">
                                             </asp:HyperLink>
                                             
                                         </ItemTemplate>

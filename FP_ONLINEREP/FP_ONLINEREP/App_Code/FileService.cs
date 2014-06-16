@@ -97,5 +97,17 @@ namespace FP_ONLINEREP.App_Code
                 context.SaveChanges();
             }
         }
+
+        public static IEnumerable<File> getFileByKeyword(string keyword)
+        {
+            using (Online_RepositoryEntities context = new Online_RepositoryEntities())
+            {
+                IEnumerable<File> result = from f in context.Files
+                                           where f.Name.Contains(keyword)
+                                           select f;
+                return result.ToList();
+            }
+        }
+
     }
 }

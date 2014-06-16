@@ -1,9 +1,9 @@
 ﻿body   
 {
-    font-size: 8pt;
+    font-size: 12pt;
     font-family: Verdana;
     margin: 10px;
-    padding: 10px;
+    padding: 4px;
 }
 
 #gvFiles 
@@ -16,7 +16,7 @@
     border-bottom: 2px solid #A7A6AA;
     border-left: 2px solid white;
     border-top: 2px solid white;
-    padding: 4px;
+    padding: 1px;
 }
 
 .GridViewStyle a
@@ -26,15 +26,15 @@
 
 .GridViewHeaderStyle th
 {
-    border-left: 1px solid #EBE9ED;
-    border-right: 1px solid #EBE9ED;
+    border-left: 4px solid #EBE9ED;
+    border-right: 4px solid #EBE9ED;
 }
 
 .GridViewHeaderStyle
 {
     background-color: #5D7B9D;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     color: White;
 }
 
@@ -77,5 +77,5 @@
 
 .GridViewPagerStyle table
 {
-    margin: 0 auto 0 auto;
+    margin: auto auto auto auto;
 }

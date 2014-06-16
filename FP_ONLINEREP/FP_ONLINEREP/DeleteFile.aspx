@@ -27,7 +27,7 @@
                 <div class="clr"></div>
             </div><!--/ Codrops top bar -->
             <header>
-                <h1><span>(LOGO AND SITE NAME GO HERE)</span></h1>
+                <h1><span>ONLINER</span></h1>
 				<nav class="codrops-demos">
 				</nav>
             </header>

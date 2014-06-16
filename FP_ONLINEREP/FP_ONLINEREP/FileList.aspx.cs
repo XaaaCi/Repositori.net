@@ -34,7 +34,12 @@ namespace FP_ONLINEREP
                 {
                     string uname = Session["uNAme"].ToString();
 
-                    gvFiles.DataSource = FileService.getAllFile();
+                    List<File> data = FileService.getAllFile().ToList();
+                    foreach (File f in data)
+                    {
+                        f.Size /= 1024;
+                    }
+                    gvFiles.DataSource = data;
                     gvFiles.DataBind();
 
                 }
@@ -44,6 +49,10 @@ namespace FP_ONLINEREP
                     var result = UserService.getUserByNameOrEmail(uname, uname);
                     
                     var data = FileService.getFileByOwner(result.UserId);
+                    foreach (File f in data)
+                    {
+                        f.Size /= 1024;
+                    }
                     gvFiles.DataSource = data.ToList();
                     gvFiles.DataBind();
 

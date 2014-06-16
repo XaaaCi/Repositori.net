@@ -29,7 +29,7 @@
             <div class="clr"></div>
         </div>
         <header>
-            <h1><span>(LOGO AND SITE NAME WILL GO HERE)</span></h1>
+            <h1><span>ONLINER</span></h1>
             <nav class="codrops-demos">
                 <a href="Upload.aspx" class="current-demo">Upload</a>
                 <a href="Home.aspx">Home</a>

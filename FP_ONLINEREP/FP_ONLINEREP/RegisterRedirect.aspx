@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <meta http-equiv="Refresh" content="5; url=LoginAndRegister.aspx" />
+    <meta http-equiv="Refresh" content="3; url=LoginAndRegister.aspx" />
 </head>
 <body>
     <form id="form1" runat="server">
