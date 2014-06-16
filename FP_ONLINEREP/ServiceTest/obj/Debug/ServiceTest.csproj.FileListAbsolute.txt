@@ -1,0 +1,9 @@
+C:\Users\Kevin1\Desktop\FP_ONLINEREP\ServiceTest\bin\Debug\ServiceTest.dll
+C:\Users\Kevin1\Desktop\FP_ONLINEREP\ServiceTest\bin\Debug\ServiceTest.pdb
+C:\Users\Kevin1\Desktop\FP_ONLINEREP\ServiceTest\bin\Debug\FP_ONLINEREP.dll
+C:\Users\Kevin1\Desktop\FP_ONLINEREP\ServiceTest\bin\Debug\EntityFramework.dll
+C:\Users\Kevin1\Desktop\FP_ONLINEREP\ServiceTest\bin\Debug\FP_ONLINEREP.pdb
+C:\Users\Kevin1\Desktop\FP_ONLINEREP\ServiceTest\bin\Debug\EntityFramework.xml
+C:\Users\Kevin1\Desktop\FP_ONLINEREP\ServiceTest\obj\Debug\ServiceTest.csprojResolveAssemblyReference.cache
+C:\Users\Kevin1\Desktop\FP_ONLINEREP\ServiceTest\obj\Debug\ServiceTest.dll
+C:\Users\Kevin1\Desktop\FP_ONLINEREP\ServiceTest\obj\Debug\ServiceTest.pdb

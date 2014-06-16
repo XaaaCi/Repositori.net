@@ -163,6 +163,8 @@
     <Compile Include="LoginAndRegister.aspx.designer.cs">
       <DependentUpon>LoginAndRegister.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MockDB\MockUser.cs" />
+    <Compile Include="MockDB\MockFile.cs" />
     <Compile Include="Online_Rep.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
