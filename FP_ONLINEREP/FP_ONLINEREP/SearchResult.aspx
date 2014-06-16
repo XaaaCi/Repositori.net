@@ -49,7 +49,7 @@
                                 <asp:TextBox ID="SearchText" runat="server"></asp:TextBox>
                                 <asp:Button ID="SearchButton" runat="server" Text="search" OnClick="SearchButton_Click"/>
                        
-                                <asp:GridView ID="gvFiles" AutoGenerateColumns="true" runat="server" CssClass="GridViewStyle">
+                                <asp:GridView  AutoGenerateColumns="true" runat="server" CssClass="grdvCrudOperation" AllowPaging="true" Height="177px" Width="546px">
                                     <FooterStyle CssClass="GridViewFooterStyle" />
                                     <RowStyle CssClass="GridViewRowStyle" />
                                     <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />

@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <h1 align="center">Thank You For Loging in</h1>
+        <h1 align="center">Thank You For Logging in</h1>
         <h2 align="center" >Click <asp:HyperLink ID="HyperLink1" runat="server" href="Home.aspx">Here </asp:HyperLink> If The Page Not Automaticly Redirect You  To The Homepage</h2>
     </div>
     </form>

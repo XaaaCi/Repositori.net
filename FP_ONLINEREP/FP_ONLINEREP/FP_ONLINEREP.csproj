@@ -64,6 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\animate-custom.css" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
     <Content Include="css\demo.css" />
     <Content Include="css\fonts\BebasNeue-webfont.svg" />
     <Content Include="css\fonts\Dharma Type Font License.txt" />

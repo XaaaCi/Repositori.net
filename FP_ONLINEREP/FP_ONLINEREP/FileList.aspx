@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
     <link rel="stylesheet" type="text/css" href="css/Site.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 </head>
 <body>
     <form id="form_container" runat="server">
@@ -44,7 +45,7 @@
                     <div id="wrapper">
                         <div id="login" class="animate form">
                                 <h1>File List</h1> 
-                                <asp:GridView ID="gvFiles" AutoGenerateColumns="true" runat="server" CssClass="GridViewStyle" Height="177px" Width="546px">
+                                <asp:GridView ID="grdvCrudOperation" AutoGenerateColumns="true" runat="server"  AllowPaging="true" Height="177px" Width="546px">
                                     <FooterStyle CssClass="GridViewFooterStyle" />
                                     <RowStyle CssClass="GridViewRowStyle" />
                                     <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
