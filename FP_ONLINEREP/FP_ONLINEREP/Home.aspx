@@ -29,7 +29,7 @@
             <div class="clr"></div>
         </div>
         <header>
-            <h1><span>ONLINER</span></h1>
+            <h1><span>ONLINEREP</span></h1>
             <nav class="codrops-demos">
                 <a href="Upload.aspx">Upload</a>
                 <a href="Home.aspx" class="current-demo">Home</a>
@@ -40,13 +40,7 @@
             <div id="container_demo">
                 <div id="wrapper">
                     <div id="login" class="animate form" >
-<<<<<<< HEAD
                         <h1 id="h1" runat="server"></h1>
-=======
-                        <h1 id="h1" runat="server">
-                            
-                        </h1>
->>>>>>> origin/master
                         <p class="current-demo">
                             <asp:TextBox ID="SearchText" runat="server"></asp:TextBox>
                             <asp:Button ID="SearchButton" runat="server" Text="search" OnClick="SearchButton_Click"/>

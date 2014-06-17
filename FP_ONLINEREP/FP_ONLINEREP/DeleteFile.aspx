@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
     <link rel="stylesheet" type="text/css" href="css/Site.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 </head>
 <body>
     <form id="form_container" runat="server">
@@ -27,7 +28,7 @@
                 <div class="clr"></div>
             </div><!--/ Codrops top bar -->
             <header>
-                <h1><span>ONLINER</span></h1>
+                <h1><span>ONLINEREP</span></h1>
 				<nav class="codrops-demos">
 				</nav>
             </header>
@@ -38,11 +39,12 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            
+                            <div class="alert-info">
                             <asp:Label ID="error" runat="server"></asp:Label><br />
                             <asp:Label ID="name" runat="server"></asp:Label><br />
                             <asp:Label ID="type" runat="server"></asp:Label><br />
                             <asp:Label ID="size" runat="server"></asp:Label><br />
+                                </div>
                             <p class="change_link">
                                 <a  href="#toregister" class="to_register">Delete</a>
                             </p>
@@ -51,7 +53,7 @@
                         <div id="register" class="animate form">
                                 <h1> Are You Sure To Want To Delete This Item? </h1> 
                                 
-                                <p class="change_link">  
+                                <p class="change_link" >  
                                     <asp:LinkButton ID="delete" runat="server" Text="Yes" OnClick="Unnamed_Click"></asp:LinkButton>
                                     <a href="FileList.aspx" class="to_register"> Back </a>
 								</p>

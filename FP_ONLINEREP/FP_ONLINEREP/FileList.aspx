@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
     <link rel="stylesheet" type="text/css" href="css/Site.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/Gridstyle.css" />
 </head>
 <body>
     <form id="form_container" runat="server">
@@ -30,7 +30,7 @@
             <div class="clr"></div>
         </div>
         <header>
-            <h1><span>ONLINER</span></h1>
+            <h1><span>ONLINEREP</span></h1>
             <nav class="codrops-demos">
                 <a href="Upload.aspx">Upload</a>
                 <a href="Home.aspx">Home</a>
@@ -43,15 +43,11 @@
                     <a class="hiddenanchor" id="toregister"></a>
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
-                        <div id="login" class="animate form">
+                        <div id="login2" class="animate form">
                                 <h1>File List</h1> 
-                                <asp:GridView ID="grdvCrudOperation" AutoGenerateColumns="true" runat="server"  AllowPaging="true" Height="177px" Width="546px">
-                                    <FooterStyle CssClass="GridViewFooterStyle" />
-                                    <RowStyle CssClass="GridViewRowStyle" />
-                                    <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
-                                    <PagerStyle CssClass="GridViewPagerStyle" />
-                                    <AlternatingRowStyle CssClass="GridViewAlternatingRowStyle" />
-                                    <HeaderStyle CssClass="GridViewHeaderStyle" />
+                                <asp:GridView ID="gvFiles" AutoGenerateColumns="true" runat="server" CssClass="Grid" Width="80%"  >
+                                    <PagerStyle CssClass="pgr" />
+                                    <AlternatingRowStyle CssClass="alt" />
                                 <Columns>
                                     <asp:TemplateField>
                                         <ItemTemplate>
@@ -59,6 +55,7 @@
                                                 NavigateUrl='<%# Eval("FileId", "GetFile.aspx?ID={0}") %>'
                                                 Text="Download">
                                             </asp:HyperLink>
+                                            
                                         </ItemTemplate>
                                     </asp:TemplateField>
                                     <asp:TemplateField>

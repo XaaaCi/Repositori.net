@@ -41,12 +41,8 @@ namespace FP_ONLINEREP
             Response.Redirect("SearchResult.aspx");
         }
 
-<<<<<<< HEAD
 
 
-=======
-        
->>>>>>> origin/master
 
     }
 }

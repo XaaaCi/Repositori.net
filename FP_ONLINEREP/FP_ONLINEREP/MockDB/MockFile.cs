@@ -112,13 +112,8 @@ namespace FP_ONLINEREP.MockDB
         public List<File> getFileByKeyword(string keyword)
         {
             IEnumerable<File> result = from f in Files
-<<<<<<< HEAD
                                        where f.Name.Contains(keyword)
                                        select f;
-=======
-                                where f.Name.Contains(keyword)
-                                select f;
->>>>>>> origin/master
             return result.ToList();
         }
     }

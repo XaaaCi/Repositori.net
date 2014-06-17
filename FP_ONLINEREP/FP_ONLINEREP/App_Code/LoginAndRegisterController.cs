@@ -11,12 +11,9 @@ namespace FP_ONLINEREP.App_Code
         public static bool tryLogin(string uName, string password)
         {
             User result = UserService.getUserByNameOrEmail(uName, uName);
-            if (result != null)
+            if (result.Password == password)
             {
-                if (result.Password == password)
-                {
-                    return true;
-                }
+                return true;
             }
             return false;
             

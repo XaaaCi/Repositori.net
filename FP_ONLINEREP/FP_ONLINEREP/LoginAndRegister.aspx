@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta charset="UTF-8" />
-    <title>Online Repository</title>
+    <title>ONLINE REPOSITORY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
     <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
     <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />

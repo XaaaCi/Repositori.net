@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using FP_ONLINEREP.App_Code;
 
+
 namespace FP_ONLINEREP
 {
     public partial class Upload : System.Web.UI.Page
@@ -22,6 +23,21 @@ namespace FP_ONLINEREP
                 uName.InnerText = Session["uName"].ToString();
             }
 
+        }
+
+
+        protected void ActionResult(IEnumerable<HttpPostedFileBase> files)
+        {
+            string name = fileInput.PostedFile.FileName;
+            int position = name.LastIndexOf("\\");
+            int size = fileInput.PostedFile.ContentLength;
+            byte[] fileData = new byte[size];
+            fileInput.PostedFile.InputStream.Read(fileData, 0, size);
+
+            FileService.addNewFile(FileService.makeNewFile(name.Substring(position + 1), fileInput.PostedFile.ContentType, size, fileData, Convert.ToInt32(Session["UId"])));
+            Session["message"] = "Upload Success";
+            Response.Redirect("Home.aspx", true);
+            
         }
 
         protected void Logout(object sender, EventArgs e)
@@ -64,6 +80,7 @@ namespace FP_ONLINEREP
             name = name.Substring(position + 1);
             string contentType = fileInput.PostedFile.ContentType;
             */
+            /*
             string name = fileInput.PostedFile.FileName;
             int position = name.LastIndexOf("\\");
             int size = fileInput.PostedFile.ContentLength;
@@ -73,6 +90,10 @@ namespace FP_ONLINEREP
             FileService.addNewFile(FileService.makeNewFile(name.Substring(position + 1), fileInput.PostedFile.ContentType, size, fileData, Convert.ToInt32(Session["UId"])));
             Session["message"] = "Upload Success";
             Response.Redirect("Home.aspx", true);
+            */
+
+            //HttpPostedFile newFile = fileInput.PostedFile;
+            //ActionResult(newFile);
             /*
             foreach(string filetagname in files)
             {

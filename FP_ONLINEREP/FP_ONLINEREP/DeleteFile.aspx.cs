@@ -36,10 +36,7 @@ namespace FP_ONLINEREP
 
         protected void logout_Click(object sender, EventArgs e)
         {
-            Session.Remove("uName");
-            Session.Remove("Authority");
-            Response.Redirect("LoginAndRegister.aspx", true);
-            //Server.Transfer("LoginAndRegister.aspx", true);
+
         }
 
         protected void Unnamed_Click(object sender, EventArgs e)

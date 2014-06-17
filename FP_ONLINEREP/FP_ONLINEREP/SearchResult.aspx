@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
     <link rel="stylesheet" type="text/css" href="css/Site.css" />
+    <link rel="stylesheet" type="text/css" href="css/Gridstyle.css" />
+
 </head>
 <body>
     <form id="form_container" runat="server">
@@ -44,22 +46,15 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                              
-                        <div id="login" class="animate form">
+                        
                                 <h1 id="header1" runat="server"></h1> 
                                 <asp:TextBox ID="SearchText" runat="server"></asp:TextBox>
                                 <asp:Button ID="SearchButton" runat="server" Text="search" OnClick="SearchButton_Click"/>
+                          
                        
-<<<<<<< HEAD
-                                <asp:GridView ID="gvFiles" AutoGenerateColumns="true" runat="server" CssClass="GridViewStyle">
-=======
-                                <asp:GridView  AutoGenerateColumns="true" runat="server" CssClass="grdvCrudOperation" AllowPaging="true" Height="177px" Width="546px">
->>>>>>> origin/master
-                                    <FooterStyle CssClass="GridViewFooterStyle" />
-                                    <RowStyle CssClass="GridViewRowStyle" />
-                                    <SelectedRowStyle CssClass="GridViewSelectedRowStyle" />
-                                    <PagerStyle CssClass="GridViewPagerStyle" />
-                                    <AlternatingRowStyle CssClass="GridViewAlternatingRowStyle" />
-                                    <HeaderStyle CssClass="GridViewHeaderStyle" />
+                                <asp:GridView ID="gvFiles" AutoGenerateColumns="true" runat="server" CssClass="Grid" >
+                                    <PagerStyle CssClass="pgr" />
+                                    <AlternatingRowStyle CssClass="alt" />
                                 <Columns>
                                     <asp:TemplateField>
                                         <ItemTemplate>
@@ -74,11 +69,9 @@
                                 </Columns>
                             </asp:GridView>
                                 
-                            
-                        </div>
+                            </div>
 
 						
-                    </div>
                 </div>
         </section>
     </div>

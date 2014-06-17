@@ -16,15 +16,11 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 html,body {
 	margin:0;
 	padding:0;
-<<<<<<< HEAD
-	height: 150%;
-=======
-	height: 125%;
->>>>>>> origin/master
+	height: auto;
 }
 table {
 	border-collapse:collapse;
-	border-spacing:10px;
+	border-spacing:0;
 }
 fieldset,img { 
 	border:0;
@@ -57,7 +53,7 @@ body{
 	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 	background: #fff url(../images/bg.jpg) repeat top left;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 15px;
 	color: #1d3c41;
 	overflow-y: scroll;
 }
