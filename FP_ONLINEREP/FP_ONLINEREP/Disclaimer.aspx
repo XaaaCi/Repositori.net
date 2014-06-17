@@ -22,7 +22,7 @@
             <div class="clr" ></div>
         </div>
         <header>
-            <h1>Login and Registration Form <span>(LOGO AND SITE NAME GO HERE)</span></h1>
+            <h1>Login and Registration Form <span></span></h1>
 		    <nav class="codrops-demos">
 			    <a href="LoginAndRegister.aspx" >Login</a>
                 <a href="Register.aspx">Register</a>

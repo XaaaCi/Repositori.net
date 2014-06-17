@@ -49,12 +49,12 @@ namespace FP_ONLINEREP {
         protected global::System.Web.UI.WebControls.LinkButton logout;
         
         /// <summary>
-        /// gvFiles control.
+        /// grdvCrudOperation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvFiles;
+        protected global::System.Web.UI.WebControls.GridView grdvCrudOperation;
     }
 }

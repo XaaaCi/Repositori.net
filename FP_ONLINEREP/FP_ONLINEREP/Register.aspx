@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <meta charset="UTF-8" />
-    <title>Welcome To Our Website</title>
+    <title>Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
     <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
     <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
@@ -22,7 +22,7 @@
             <div class="clr"></div>
         </div>
         <header>
-            <h1>Login and Registration Form <span>(LOGO AND SITE NAME WILL GO HERE)</span></h1>
+            <h1>Login and Registration Form <span></span></h1>
             <nav class="codrops-demos">
                 <a href="LoginAndRegister.aspx">Login</a>
                 <a href="Register.aspx" class="current-demo">Register</a>

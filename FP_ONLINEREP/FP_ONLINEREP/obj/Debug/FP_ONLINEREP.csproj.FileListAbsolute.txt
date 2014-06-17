@@ -12,6 +12,7 @@ C:\Users\Kevin1\Desktop\FP_ONLINEREP\FP_ONLINEREP\bin\FP_ONLINEREP.pdb
 C:\Users\Kevin1\Desktop\FP_ONLINEREP\FP_ONLINEREP\bin\EntityFramework.dll
 C:\Users\Kevin1\Desktop\FP_ONLINEREP\FP_ONLINEREP\bin\EntityFramework.xml
 C:\Users\Kevin1\Desktop\FP_ONLINEREP\FP_ONLINEREP\obj\Debug\FP_ONLINEREP.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\admin\Desktop\Repositori.net-948e0a850b47edc9c8a6f5fd5d4976c61be3f539\FP_ONLINEREP\FP_ONLINEREP\obj\Debug\FP_ONLINEREP.csprojResolveAssemblyReference.cache
 C:\Users\admin\Desktop\Repositori.net-948e0a850b47edc9c8a6f5fd5d4976c61be3f539\FP_ONLINEREP\FP_ONLINEREP\obj\Debug\FP_ONLINEREP.dll
 C:\Users\admin\Desktop\Repositori.net-948e0a850b47edc9c8a6f5fd5d4976c61be3f539\FP_ONLINEREP\FP_ONLINEREP\bin\FP_ONLINEREP.dll
@@ -19,3 +20,12 @@ C:\Users\admin\Desktop\Repositori.net-948e0a850b47edc9c8a6f5fd5d4976c61be3f539\F
 C:\Users\admin\Desktop\Repositori.net-948e0a850b47edc9c8a6f5fd5d4976c61be3f539\FP_ONLINEREP\FP_ONLINEREP\bin\EntityFramework.dll
 C:\Users\admin\Desktop\Repositori.net-948e0a850b47edc9c8a6f5fd5d4976c61be3f539\FP_ONLINEREP\FP_ONLINEREP\bin\EntityFramework.xml
 C:\Users\admin\Desktop\Repositori.net-948e0a850b47edc9c8a6f5fd5d4976c61be3f539\FP_ONLINEREP\FP_ONLINEREP\obj\Debug\FP_ONLINEREP.pdb
+=======
+C:\Users\admin\Documents\GitHub\Repositori.net\FP_ONLINEREP\FP_ONLINEREP\bin\FP_ONLINEREP.dll
+C:\Users\admin\Documents\GitHub\Repositori.net\FP_ONLINEREP\FP_ONLINEREP\bin\FP_ONLINEREP.pdb
+C:\Users\admin\Documents\GitHub\Repositori.net\FP_ONLINEREP\FP_ONLINEREP\bin\EntityFramework.dll
+C:\Users\admin\Documents\GitHub\Repositori.net\FP_ONLINEREP\FP_ONLINEREP\bin\EntityFramework.xml
+C:\Users\admin\Documents\GitHub\Repositori.net\FP_ONLINEREP\FP_ONLINEREP\obj\Debug\FP_ONLINEREP.dll
+C:\Users\admin\Documents\GitHub\Repositori.net\FP_ONLINEREP\FP_ONLINEREP\obj\Debug\FP_ONLINEREP.pdb
+C:\Users\admin\Documents\GitHub\Repositori.net\FP_ONLINEREP\FP_ONLINEREP\obj\Debug\FP_ONLINEREP.csprojResolveAssemblyReference.cache
+>>>>>>> origin/master

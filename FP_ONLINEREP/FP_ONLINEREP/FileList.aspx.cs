@@ -29,18 +29,41 @@ namespace FP_ONLINEREP
         public void BindData()
         {
 
+<<<<<<< HEAD
             int authority = Convert.ToInt16(Session["authority"]);
             if (authority == 1)
             {
                 string uname = Session["uNAme"].ToString();
+=======
+                    List<File> data = FileService.getAllFile().ToList();
+                    foreach (File f in data)
+                    {
+                        f.Size /= 1024;
+                    }
+                    gvFiles.DataSource = data;
+                    gvFiles.DataBind();
+>>>>>>> origin/master
 
                 List<File> data = FileService.getAllFile().ToList();
                 foreach (File f in data)
                 {
+<<<<<<< HEAD
                     f.Size /= 1024;
                 }
                 gvFiles.DataSource = data;
                 gvFiles.DataBind();
+=======
+                    string uname = Session["uNAme"].ToString();
+                    var result = UserService.getUserByNameOrEmail(uname, uname);
+                    
+                    var data = FileService.getFileByOwner(result.UserId);
+                    foreach (File f in data)
+                    {
+                        f.Size /= 1024;
+                    }
+                    gvFiles.DataSource = data.ToList();
+                    gvFiles.DataBind();
+>>>>>>> origin/master
 
             }
             else

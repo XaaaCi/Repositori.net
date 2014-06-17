@@ -99,6 +99,10 @@ namespace ServiceTest
             int expected = 4;
             Assert.AreEqual(expected, result.Count, "Seharusnya 4");
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
         [TestMethod]
         public void TestGetFileByKeyword()
         {

@@ -74,6 +74,7 @@ namespace FP_ONLINEREP {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SearchButton;
+<<<<<<< HEAD
         
         /// <summary>
         /// gvFiles control.
@@ -83,5 +84,7 @@ namespace FP_ONLINEREP {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvFiles;
+=======
+>>>>>>> origin/master
     }
 }
