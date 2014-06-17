@@ -99,5 +99,15 @@ namespace ServiceTest
             int expected = 4;
             Assert.AreEqual(expected, result.Count, "Seharusnya 4");
         }
+        [TestMethod]
+        public void TestGetFileByKeyword()
+        {
+            MockFile tester = new MockFile();
+            tester.createMockFile();
+            string keyword = "s";
+            List<File> result = tester.getFileByKeyword(keyword);
+
+            Assert.AreEqual(1, result.Count, "katanya sih 1");
+        }
     }
 }

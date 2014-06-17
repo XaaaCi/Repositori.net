@@ -108,5 +108,13 @@ namespace FP_ONLINEREP.MockDB
         {
                 Files.Add(fileToAdd);
         }
+
+        public List<File> getFileByKeyword(string keyword)
+        {
+            IEnumerable<File> result = from f in Files
+                                       where f.Name.Contains(keyword)
+                                       select f;
+            return result.ToList();
+        }
     }
 }

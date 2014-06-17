@@ -7,7 +7,7 @@ namespace FP_ONLINEREP.App_Code
 {
     public class FileService
     {
-        
+
         public static File makeNewFile(string name, string contentType, int size, byte[] fileData, int uID)
         {
             File newFile = new File();
@@ -16,7 +16,7 @@ namespace FP_ONLINEREP.App_Code
             newFile.Size = size;
             newFile.Data = fileData;
             newFile.UserId = uID;
-            newFile.FileId = FileService.getMaxId()+1;
+            newFile.FileId = FileService.getMaxId() + 1;
 
             return newFile;
         }
@@ -41,7 +41,7 @@ namespace FP_ONLINEREP.App_Code
                 return result.ToList();
             }
         }
-        
+
         public static IEnumerable<File> getFileByOwner(int userID)
         {
             using (Online_RepositoryEntities context = new Online_RepositoryEntities())
@@ -66,13 +66,13 @@ namespace FP_ONLINEREP.App_Code
 
         public static void deleteFile(int id)
         {
-                
+
             using (Online_RepositoryEntities context = new Online_RepositoryEntities())
             {
                 File fileToDelete = (from f in context.Files
-                                    where f.FileId == id
-                                    select f).FirstOrDefault();
-                
+                                     where f.FileId == id
+                                     select f).FirstOrDefault();
+
                 context.Files.Remove(fileToDelete);
                 context.SaveChanges();
             }
@@ -97,5 +97,17 @@ namespace FP_ONLINEREP.App_Code
                 context.SaveChanges();
             }
         }
+
+        public static IEnumerable<File> getFileByKeyword(string keyword)
+        {
+            using (Online_RepositoryEntities context = new Online_RepositoryEntities())
+            {
+                IEnumerable<File> result = from f in context.Files
+                                           where f.Name.Contains(keyword)
+                                           select f;
+                return result.ToList();
+            }
+        }
+
     }
 }

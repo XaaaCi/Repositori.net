@@ -10,7 +10,16 @@
 namespace FP_ONLINEREP {
     
     
-    public partial class Home {
+    public partial class SearchResult {
+        
+        /// <summary>
+        /// Head1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
         
         /// <summary>
         /// form_container control.
@@ -40,13 +49,13 @@ namespace FP_ONLINEREP {
         protected global::System.Web.UI.WebControls.LinkButton logout;
         
         /// <summary>
-        /// h1 control.
+        /// header1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl h1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl header1;
         
         /// <summary>
         /// SearchText control.
@@ -65,5 +74,14 @@ namespace FP_ONLINEREP {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SearchButton;
+        
+        /// <summary>
+        /// gvFiles control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvFiles;
     }
 }

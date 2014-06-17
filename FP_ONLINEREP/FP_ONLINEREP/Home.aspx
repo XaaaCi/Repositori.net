@@ -41,6 +41,11 @@
                 <div id="wrapper">
                     <div id="login" class="animate form" >
                         <h1 id="h1" runat="server"></h1>
+                        <p class="current-demo">
+                            <asp:TextBox ID="SearchText" runat="server"></asp:TextBox>
+                            <asp:Button ID="SearchButton" runat="server" Text="search" OnClick="SearchButton_Click"/>
+                            
+                        </p>
                         <p class="change_link">  
                             <a href="Upload.aspx" class="to_register"> Upload new file</a>
 						    <a href="FileList.aspx" class="to_register">File List</a>

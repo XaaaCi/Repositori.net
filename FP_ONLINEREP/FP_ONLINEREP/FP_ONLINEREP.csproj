@@ -87,6 +87,7 @@
     <Content Include="Profile.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="RegisterRedirect.aspx" />
+    <Content Include="SearchResult.aspx" />
     <Content Include="Upload.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -201,6 +202,13 @@
     </Compile>
     <Compile Include="RegisterRedirect.aspx.designer.cs">
       <DependentUpon>RegisterRedirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchResult.aspx.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchResult.aspx.designer.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
     </Compile>
     <Compile Include="Upload.aspx.cs">
       <DependentUpon>Upload.aspx</DependentUpon>
